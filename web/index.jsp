@@ -17,15 +17,22 @@
         
         <h1>Ver lista de Personas</h1>
         <p>Si desea ver todas las personas haga click en el botón "Mostrar Personas"</p>
-        <form action=" " method=" ">
+        <form action="SvPersona" method="GET">
             <button type="submit ">Mostrar Personas</button>
         </form>
         
         <h1>Eliminar Personas</h1>
-        <p>Ingrese el DNI de la persona a eliminar</p>
-        <form action=" " method=" ">
-            <p><label>DNI: </label> <input type="text" name="dni_elim"></p>
+        <p>Ingrese la ID de la persona a eliminar</p>
+        <form action="SvEliminar" method="POST">
+            <p><label>Id: </label> <input type="text" name="id_eliminar"></p>
             <button type="submit">Eliminar</button>
+        </form>
+        
+        <h1>Editar Persona</h1>
+        <p>Ingrese la ID de la persona a editar</p>
+        <form action=" " method=" ">
+            <p><label>ID: </label> <input type="text" name="id_editar"></p>
+            <button type="submit">Editar</button>
         </form>
     </body>
 </html>
